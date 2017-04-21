@@ -1,0 +1,8 @@
+//if a user wants to double clicks on an element, rather than just single-clicking!
+// .dblclick() event handler is used
+
+$(document).ready(function() {
+   $("div").dblclick(function() {
+      $(this).fadeOut("fast");
+   });
+});
