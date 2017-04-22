@@ -1,0 +1,19 @@
+// omg!! not only mouse but EvEn keyboard can be used to trigger the events. muhahahha(evil laugh)
+
+//here with the help of .animate() we will try this example
+//The .animate() effect takes two inputs: the animation to perform, and the time in which to perform the animation. Here's an example:
+//syntax for .animate()
+$(document).ready(function() {
+   $('div').animate({left:'+=10px'},500);
+});
+
+***************************************************
+$(document).ready(function() {
+    $(document).keydown(function() { //inside keydown we have written function!!
+        $("div").animate({left:"+=10px"},500); //remember the animate syntax!
+        });
+});
+***************************************************
+
+NOtes: The .keydown() event is triggered whenever a key on the keyboard is pressed. It only works on whatever page element has focus, so you'll need to click on the window containing your div before pressing a key in order for you to see its effects.
+so, for .keydown() we endup writingthis way $(document).keydown(function() {}
