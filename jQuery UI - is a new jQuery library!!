@@ -41,3 +41,8 @@ $(document).ready(function() {
 $(document).ready(function() {
    $("ol").sortable(); 
 });
+
+.accordion()
+$(document).ready(function() {
+    $("#menu").accordion();
+});
