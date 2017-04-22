@@ -1,0 +1,8 @@
+//The .focus() event handler only works on elements that can receive focus—the list of these elements is a bit vague, but HTML elements like <textarea>s and <input>s are the usual suspects.
+
+
+$(document).ready(function() {
+    $("input").focus(function() { //i dint know that we can write in this way using focus() event handler
+       $(this).css("outline-color","#FF0000") //one shall remeber this syntax!!
+    });
+});
