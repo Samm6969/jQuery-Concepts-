@@ -1,0 +1,43 @@
+//for blowing up, we used .effect("explode");
+
+
+$(document).ready(function() {
+   $("div").click(function() {
+      $("div").effect("explode");
+   });
+});
+******************************************
+.bounce()
+syntax: $('div').effect('bounce', {times:2}, 200);
+Note: here need to mention times 
+*********************************************
+.slide()
+ $("div").effect("slide");
+ ********************************************
+ Special Effects
+ 
+ //The .effect() effect has all kinds of magical goodness in it, but it's not the most amazing thing jQuery UI can do. 
+ //The library has a number of built-in effects that can make your website look sleek and professional
+ //with surprisingly little code.
+ //You can learn more in the http://jqueryui.com/
+ 
+ .draggable()
+ $(document).ready(function() {
+    $("#car").draggable();
+});
+
+.resizable()
+$(document).ready(function() {
+    $("div").resizable();
+});
+********************************
+//Not only images and div's, we can also target & enhance our ordered and unordered lists.
+.selectable()
+$(document).ready(function() {
+   $("ol").selectable(); 
+});
+
+.sortable()
+$(document).ready(function() {
+   $("ol").sortable(); 
+});
