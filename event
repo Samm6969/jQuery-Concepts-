@@ -1,0 +1,26 @@
+//The event object contains more information about an event, 
+//such as which mouse button was clicked or which key was pressed.
+
+//$(document) selects the whole web page, and the .keypress() method attaches an event handler to document.
+
+$(document).keypress(function(event) {
+  if(event.which === 109) {
+    $('.dropdown-menu').toggle();
+  }
+});
+
+//here, The event handler takes event as a parameter.
+//event.which contains which key was pressed. Keyboard keys are identified by key codes. 
+//The m key is identified by the key code 109.
+
+Another Example: 
+var main = function() {
+  $(document).keypress(function(event) {
+   if(event.which === 103) {
+   $(".btn").toggleClass("btn-like");
+    }
+  });
+};
+
+$(document).ready(main);
+
