@@ -1,0 +1,13 @@
+//Another common user event is the keypress event. A keypress event occurs when a user types a key on the keyboard.
+//The .keypress() method attaches an event handler to an HTML element so that it can respond to a keypress event.
+
+var main = function() {
+  $(document).keypress(function() {       //$(document) selects the whole web page.
+     $(".btn").toggleClass("btn-like");
+
+  });
+};
+
+$(document).ready(main);
+
+
