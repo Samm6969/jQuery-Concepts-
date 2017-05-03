@@ -1,0 +1,13 @@
+//Fill in the event handler below to apply the class "btn-like" to the $(".btn") element. 
+//Use .toggleClass() to apply the class. Use this to operate on the already-selected HTML element.
+
+
+
+var main = function() {
+  $(".btn").click(function() {
+  $(this).toggleClass('btn-like');
+
+  });
+};
+
+$(document).ready(main);
